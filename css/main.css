@@ -98,6 +98,99 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/***** BASE HEADER - FOOTER STYLES *****/
+
+header, footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* HEADER STYLES */
+
+header {
+	display: flex;
+}
+
+header .content-wrapper {
+	display: flex;
+}
+
+.header-divider {
+	display: flex;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav ul {
+	display: flex;
+}
+
+/* FOOTER STYLES */
+
+footer .social-icons {
+	display: flex;
+}
+
+footer .social-icons p {
+	display: flex;
+}
+
+
+
+/***** MOBILE STYLES - HOMEPAGE *****/
+
+/* HERO AREA */
+
+.hero-area {
+	display: flex;
+}
+
+/* ASIDE */
+
+aside {
+	display: flex;
+}
+
+/* FEATURES */
+
+.features {
+	display: flex;
+}
+
+.features .features-items {
+	display: flex;
+}
+
+/* REVIEWS */
+
+.reviews {
+	display: flex;
+}
+
+/***** MOBILE STYLES - ABOUT *****/
+
+.mission {
+	display: flex;
+}
+
+.contact-section {
+	display: flex;
+}
+
+/***** MOBILE STYLES - FAQ *****/
+
+.faq {
+	display: flex;
+}
+
+.faq .content-wrapper {
+	display: flex;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
