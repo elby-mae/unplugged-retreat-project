@@ -404,7 +404,7 @@ features p {
 
 	header {
 		justify-content: space-around;
-		padding 33px 0;
+		padding: 33px 0;
 	}
 
 	header .content-wrapper {
@@ -424,17 +424,15 @@ features p {
 		display: none;
 	}
 
-	.hero-area .content-wrapper {
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
+/* Hero */
+
+/* Aside */
 
 	aside .content-wrapper {
 		margin: 50px 0;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		flex-flow: row wrap;
 	}
 
 	aside .content-wrapper .form-description,
@@ -452,7 +450,7 @@ features p {
 	}
 
 	.features .features-item-description {
-		width: 50%
+		width: 62%
 	}
 
 	.reviews article {
@@ -465,7 +463,6 @@ features p {
 	}
 
 	footer .content-wrapper {
-		align-items: center;
 		width: 65%;
 		margin: 100px 0;
 	}
@@ -494,10 +491,6 @@ features p {
 		padding-top: 20px;
 	}
 
-	.mission-content h2 {
-		width: 80%;
-	}
-
 	.mission-content p {
 		width: 45%;
 	}
@@ -514,13 +507,11 @@ features p {
 
 /*** FAQ ***/
 
-	.faq .content-wrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	header {
+		padding: 15px 0;
 	}
 
-	.faq {
+	.faq .content-wrapper {
 		justify-content: space-between;
 	}
 
@@ -537,7 +528,53 @@ features p {
 /***** DESKTOP STYLES *****/
  
 @media only screen and (min-width: 1200px) {
-/*Desktop styles here*/
+	.content-wrapper {
+		max-width: 960px;
+   }
+
+	/* Hero */
+	.hero-area h1 {
+	   width: 60%;
+	}
+
+	/* Aside */
+	aside .content-wrapper {
+		justify-content: space-around;
+	}
+
+	aside .content-wrapper .form-description,
+	aside .content-wrapper .form {
+		width: 30%;
+	}
+
+	/* Features */
+	.features h2 {
+		width: 90%;
+	}
+
+	.features article {
+		flex-basis: 33%; 
+	}
+
+	/* Reviews */ 
+	.reviews article div {
+		width: 42%;
+	}
+
+/*** ABOUT ***/
+
+	.mission h2,
+	.contact-section .content-wrapper h2 {
+		width: 95%;
+	}
+
+/*** FAQ ***/
+
+	.faq h2 {
+		width: 100%;
+	}
+
+
 }
 
 /* ==========================================================================
